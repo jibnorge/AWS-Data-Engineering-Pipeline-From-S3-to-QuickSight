@@ -16,7 +16,7 @@
 - Amazon Athena
 - Amazon QuickSight
 
-### Objectives
+## Objectives
 -   Launch and configure an AWS Cloud9 integrated development environment (IDE) instance.
 -   Run SQL queries against a single file by using the Amazon S3 Select feature of Amazon Simple Storage Service (Amazon S3).
 -   Transform CSV-formatted data files to the Apache Parquet format and upload them to Amazon S3.
@@ -25,7 +25,7 @@
 -   Create an Athena view.
 -   Use Amazon QuickSight to visualize the data.
 
-### Dataset
+## Dataset
 The Sea Around Us website provides a dataset with extensive historical information about fisheries in all parts of every ocean globally. The data includes information about yearly fishery catches from 1950 to 2018.
 
 The data can be downloaded in CSV format from the [Sea Around Us](https://www.seaaroundus.org/data/) website. The dataset includes columns of information for each year, including which countries caught which types of fish in which areas. The data also indicates how many tonnes of fish were caught and what the value of the catch was, measured in 2010 US dollars.
@@ -35,7 +35,7 @@ To understand the data, it will be helpful to understand what is meant by _open 
 -   **Open seas (also called high seas):** Areas of the ocean that are at least 200 nautical miles away from any single country's shoreline. The resources, including the fish, in these areas are generally accepted as not belonging to any one country.
 -  **Exclusive Economic Zones (EEZs):** Areas within 200 nautical miles of a country's shoreline. Each country typically claims exclusive access to the resources in the zones, including the fish within them.
 
-### Scenario
+## Scenario
 You have been tasked to create the infrastructure to host fishing data so that data analysts in your organization can create reports about fishing impact in the open seas. You have decided to build the infrastructure in your AWS account and test it by using three data files from the Sea Around Us dataset.
 
 In this capstone project, you will work with three data files from the Sea Around Us website:
@@ -44,15 +44,15 @@ In this capstone project, you will work with three data files from the Sea Aroun
 -   The second file contains data from a _single open seas area_ in the Pacific ocean, referred to as _Pacific, Western Central_, which is not far from Fiji and many other countries.
 -   The third file contains data from the _EEZ_ of a single country (Fiji), which is near the Pacific, Western Central open seas area.
 
-### Initial Environment
+## Initial Environment
 <img src = "images/initial_env.png"></img>
 
 
-### Final Architecture
+## Final Architecture
 <img src = "images/final_env.png"></img>
 
 
-### Tasks done
+## Tasks done
 ### 1. Configuring the development environment
 - To observe details of CapstoneGlueRole we access IAM 
 	- 4 policies found: AWSQuickSightAthenaAccess, AmazonS3FullAccess,  AmazonAthenaFullAccess, AWSGlueServiceRole
