@@ -189,6 +189,7 @@ Example query:
 SELECT DISTINCT area_name FROM fishdb.data_source_0001;
 ```
 Output:
+
 <img src = "images/img_2.png"></img> 
 
 **Note:** The example query returns two results. For this column, every row in the dataset contains either the value "Pacific, Western Central" (for rows pulled from _SAU-HighSeas-71-v48-0.parquet_) or a null value (for rows pulled from _SAU-GLOBAL-1-v48-0.parquet_).
@@ -204,6 +205,7 @@ ORDER By year
 ```
 
 Output:  
+
 <img src = "images/img_3.png"></img>
 
 ```
@@ -235,6 +237,7 @@ GROUP BY year, fishing_entity
 ORDER By year
 ```
 Output:
+
 <img src = "images/img_4.png"></img>
 
 - Create a view based on query
@@ -307,6 +310,7 @@ Running crawler first time took 2 min 42 sec, but now during updating it only to
 SELECT DISTINCT area_name FROM fishdb.data_source_0001;
 ```
 Output:
+
 <img src = "images/img_5.png"></img> 
 
 
@@ -320,6 +324,7 @@ GROUP BY year, fishing_entity
 ORDER By year
 ```
 Output:
+
 <img src = "images/img_6.png"></img>
 
 - To find the value in US dollars of all fish caught by Fiji _from the Fiji EEZ_ since 2001, organized by year, use the following query:
@@ -331,6 +336,7 @@ GROUP BY year, fishing_entity
 ORDER By year
 ```
 Output:
+
 <img src = "images/img_7.png"></img>
 
 
@@ -343,6 +349,7 @@ GROUP BY year, fishing_entity
 ORDER By year
 ```
 Output:
+
 <img src = "images/img_8.png"></img>
 
 
@@ -361,7 +368,9 @@ GROUP BY year, area_name, fishing_entity, tonnes
 ORDER BY tonnes DESC
 ```
 Verify by viewing the data in Data panel, under views => preview mackerelscatch view
+
 Output:
+
 <img src = "images/img_9.png"></img>
 
 
@@ -374,7 +383,9 @@ Here we will use QuickSight to create a bar chart from our dataset
 - Create QuickSight Account
 QuickSight console => Signup for QuickSight => Enterprise => Continue
 On Create your QuickSigth Account page => QuickSight Account name: capstone-0001 => Notification email address: your email address => IAM role: use existing role: aws-quicksight-service-role-v0 => Finish => Goto Amazon QuickSight after created
+
 Output:
+
 <img src = "images/img_10.png"></img>
 
 
@@ -387,7 +398,9 @@ Fields list => Drag year into empty chart => expand field wells area => verify t
 Adjust chart settings => choose two arrow icons in top right corner of chart to expand it => Double-click the chart title, "Sum of Totalweight by Year and Country." => place cursor in text field that reads Default and enter following as new chart title
 `Tonnes of mackerel caught by year by country in the Fiji EEZ and in the Pacific, Western Central open seas` => save
 On left side of chart choose arrow icon above year => choose format => choose number format that doesn't contain commas or period => choose arrow icon on sheet1 tab and rename the sheet to Fish data
+
 Output:
+
 <img src = "images/img_11.png"></img>   
 
 
@@ -445,6 +458,7 @@ This line orders the final results of the view by the total weight in tonnes in 
 ```
 
 Output:
+
 <img src = "images/img_12.png"></img> 
 
 Summary:
