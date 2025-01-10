@@ -462,4 +462,4 @@ Output:
 <img src = "images/img_12.png"></img> 
 
 Summary:
-Created quick sight account then added quicksight dataset from Athena view. Then we create bar chart in quicksight for default athena view. We then change the view in athena to reduce amount of data shown in chart and again display the chart in QuickSight. Even at end it shows 0$ spend.
+Created quick sight account then added quicksight dataset from Athena view. Then we create bar chart in quicksight for default athena view. We then change the view in athena to reduce amount of data shown in chart and again display the chart in QuickSight.
